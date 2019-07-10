@@ -25,7 +25,7 @@ SECRET_KEY = 'sb6a68i^hinp$rr#+#9x#6dsf+-m9%lzwx&cdfeiccz40-7wy_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://django-mobile-store.herokuapp.com/"]
+ALLOWED_HOSTS = ['https://django-mobile-store.herokuapp.com']
 
 
 # Application definition
