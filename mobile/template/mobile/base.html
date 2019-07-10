@@ -35,7 +35,7 @@
         <a class="nav-link" href="{% url 'mobile-about' %}">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Product</a>
+        <a class="nav-link" href="{% url 'mobile-ems' %}">EMS</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Contact Us</a>
@@ -72,17 +72,8 @@
       <hr class="d-sm-none">
     </div>
     <div class="col-sm-8">
-      <h2>Iphone X</h2>
-      <h5>The new Iphone</h5>
-      <img src="{% static 'mobile/about.jpg' %}" width="100%">
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>Iphone X</h2>
-      <h5>The new Iphone</h5>
-      <img src="{% static 'mobile/about.jpg' %}" width="100%">
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        {% block content_product %}
+        {% endblock content_product %}
     </div>
   </div>
 </div>

@@ -1,0 +1,26 @@
+{% extends "mobile/base.html" %}
+{% load static %}
+
+{% block content %}
+<h3>{{ title }}</h3>
+{% endblock content %}
+
+{% block content_product %}
+    EMS Tracking
+    <table class="table table-hover">
+    <thead>
+      <tr>
+         <th>ชื่อลูกค้า</th>
+         <th>เลขติดตามสินค้า</th>      
+        </tr>
+    </thead>
+    <tbody>
+      {% for p in emslist %}
+      <tr>
+        <td>{{ p.ems_name }}</td>
+        <td>{{ p.ems_number }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock content_product %}
